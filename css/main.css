@@ -76,9 +76,26 @@ h1 {
     font-size: 1.8rem;
 }
 
-cta-buttons {
+.cta-buttons {
+    margin: 5em 0;
+}
+
+.cta-buttons, .secondary-cta {
     display: flex;
     gap: 2em;
+}
+
+.secondary-cta {
+    display: block;
+    font-size: 1.8em;
+    text-decoration: none;
+    color: black;
+    padding: 1em 0;
+    align-items: center;
+}
+
+.secondary-cta svg {
+    width: 25px;
 }
 
 button {
@@ -90,4 +107,35 @@ button {
     text-decoration: none;
     border-radius: 1.9em;
     padding: 1em 2em;
+}
+
+.bio {
+    display: flex;
+    gap: 3em;
+    padding: 4em;
+    border: 1px solid black;
+    border-radius: 0.8em;
+    position: relative;
+}
+
+.bio:before {
+    position: absolute;
+    content: "";
+    background: url(../images/confetti.svg);
+    width: 100px;
+    height: 100px;
+    top: -20px;
+    left: -20px;
+    z-index: 2;
+}
+
+.catch {
+    font-size: 3.3rem;
+    margin: 0;
+    font-weight: 300;
+}
+
+.bio-text {
+    font-size: 1.4rem;
+    margin: 0;
 }
