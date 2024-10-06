@@ -112,7 +112,7 @@ button {
 .bio {
     display: flex;
     gap: 3em;
-    padding: 4em;
+    padding: 5em;
     border: 1px solid black;
     border-radius: 0.8em;
     position: relative;
@@ -133,6 +133,7 @@ button {
     font-size: 3.3rem;
     margin: 0;
     font-weight: 300;
+    line-height: 100%;
 }
 
 .bio-text {
