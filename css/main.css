@@ -140,3 +140,55 @@ button {
     font-size: 1.4rem;
     margin: 0;
 }
+
+/* Right column Gallery */
+
+.right-col {
+    display: grid;
+    gap: 2.3em;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "top top"
+    "left right"
+    "left bottomR";
+}
+
+.card1 {
+    grid-area: top;
+    background-image: url('/images/twoCarBlackSilver.jpg.jpg');
+}
+
+.card2{
+    grid-area: right;
+    background-image: url('/images/scooter.jpg.jpg');
+}
+
+.card4 {
+    grid-area: bottomR;
+    background-image: url('/images/strollerBlackYellow.jpg.jpg');
+}
+
+.card3 {
+    grid-area: left;
+    background-image: url('/images/supOrTurYellowBlack.jpg.jpg');
+}
+
+.card {
+    border-radius: 0.8em;
+    padding: 1.1em;
+    display: flex;
+    align-items: end;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-details {
+    background-color: white;
+    border-radius: 0.6em;
+    padding: 2em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
