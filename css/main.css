@@ -45,9 +45,18 @@ nav ul li a {
 nav ul li a.active::before {
     position: absolute;
     content: "";
-    width: 35%;
+    width: 100%;
     height: 1px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #489FB5;
+    bottom: -5px;
+}
+
+nav ul li a::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 1px;
+    border-bottom: 2px solid #489FB5;
     bottom: -5px;
 }
 
@@ -58,7 +67,7 @@ main {
 }
 
 .left-col {
-    width: 45%;
+    width: 60%;
 }
 
 .right-col {
@@ -191,4 +200,23 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.card-details a {
+    color: black;
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-details p {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+/* Micro Interactions */
+
+nav ul li a:hover:before {
+    width: 100%;
+    
 }
