@@ -64,14 +64,17 @@ main {
     display: flex;
     gap: 8em;
     margin-top: 11em;
+    justify-content: space-between;
 }
 
 .left-col {
-    width: 60%;
+    width: 55%;
+    margin: 2em;
 }
 
 .right-col {
     flex-grow: 1;
+    margin: 2em;
 }
 
 h1 {
@@ -104,7 +107,8 @@ h1 {
 }
 
 .secondary-cta svg {
-    width: 25px;
+    width: 1.2rem;
+    transition-duration: 400ms;
 }
 
 button {
@@ -119,9 +123,11 @@ button {
 }
 
 .bio {
-    display: flex;
+    width: 100%;
     gap: 3em;
-    padding: 5em;
+    padding: 4em;
+    margin-left: 0;
+    margin-right: 5em;
     border: 1px solid black;
     border-radius: 0.8em;
     position: relative;
@@ -140,14 +146,21 @@ button {
 
 .catch {
     font-size: 3.3rem;
-    margin: 0;
+    margin: 20px;
     font-weight: 300;
     line-height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -6px;
+    left: -2px;
+    display: block;
 }
 
 .bio-text {
     font-size: 1.4rem;
     margin: 0;
+    width: 100%;
+    margin-top: 70px;
 }
 
 /* Right column Gallery */
@@ -190,12 +203,14 @@ button {
     align-items: end;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
+    height: auto;
 }
 
 .card-details {
     background-color: white;
     border-radius: 0.6em;
-    padding: 2em;
+    padding: 0.5em;
     width: 100%;
     display: flex;
     align-items: center;
@@ -219,4 +234,16 @@ button {
 nav ul li a:hover:before {
     width: 100%;
     
+}
+
+.primary-cta:hover {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.secondary-cta:hover svg {
+    transform: translatex(10px);
+}
+
+.secondary-cta:hover {
+    text-decoration: underline;
 }
