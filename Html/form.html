@@ -5,8 +5,18 @@
     </head>
     <body>
         <form action="/Js/main.js" method="POST">
-            <label for="name">First Name:</label>
-            <input type="text" id="name" placeholder="Anna Maria" required><br>
+            <fieldset>
+                <label for="name">First Name: 
+                    <input type="text" id="name" placeholder="Anna Maria" required/><br>
+                </label>
+                <label for="surname"> Surname: 
+                    <input type="text" id="surname" placeholder="Mountaki" required /> <br>
+                </label>
+                <label for="pickup"> Pickup Time: 
+                    <input type="time" id="pickup" required />
+                </label>
+            </fieldset>
+            
             <input type="submit" value="Submit">
         </form>
     </body>
