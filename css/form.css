@@ -1,0 +1,54 @@
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.inline label{
+    display: inline;
+}
+
+.inline {
+    margin: 0.5rem 0;
+}
+
+.inline input {
+    width: unset;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    min-width: 300px;
+    margin: auto auto;
+    width: 60vw;
+    height: 100vh;
+    max-height: 50vh;
+    background-color: white;
+    border-radius: 20px;
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 0;
+}
+
+legend {
+    text-align: center;
+}
+
+input {
+    width: 95%;
+    margin: 10px 0 auto;
+    
+}
+
+html, body {
+    background: linear-gradient(to bottom, #489FB5 0% ,#A4B6BA 100%) no-repeat;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}

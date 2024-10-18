@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1">
+        <link rel="stylesheet" href="/css/form.css"/>
         <title>Form</title>
     </head>
     <body>
-        <form action="/Js/main.js" method="POST">
-            <fieldset>
-                <label for="name">First Name: 
-                    <input type="text" id="name" placeholder="Anna Maria" required/><br>
-                </label>
-                <label for="surname"> Surname: 
-                    <input type="text" id="surname" placeholder="Mountaki" required /> <br>
-                </label>
-                <label for="pickup"> Pickup Time: 
-                    <input type="time" id="pickup" required />
-                </label>
-            </fieldset>
-            
-            <input type="submit" value="Submit">
+        <div class="container">
+            <form action="/Js/main.js" method="POST">
+                <fieldset class="formContent">
+                    <legend>Main Driver's Details</legend>
+                    <div class="inline">
+                        <label for="Mr"><input id="Mr" name="title" type="radio" checked/> Mr.</label>
+                        <label for="Ms"><input id="Ms" name="title" type="radio" /> Ms.</label>
+                        <label for="Mrs"><input id="Mrs" name="title" type="radio" /> Mrs.</label>
+                        <label for="Miss"><input id="Miss" name="title" type="radio" /> Miss.</label>
+                    </div>
+                    <label for="name">First Name: 
+                        <input type="text" id="name" placeholder="Anna Maria" required/>
+                    </label>
+                    <label for="surname"> Surname: 
+                        <input type="text" id="surname" placeholder="Mountaki" required /> 
+                    </label>
+                    <label for="pickup"> Pickup Time: 
+                        <input type="time" id="pickup" required /> 
+                    </label>
+                    <label for="email"> Email: <input id="email" type="email" placeholder="myname@gmail.com" required /></label>
+                    <labe for="phone">Phone Number: <input id="phone" type="text" placeholder="6945484469" required /></labe>
+                </fieldset>
+                <label for="terms" class="inline"><input id="terms" type="checkbox" required/> I have read and accept the Terms and conditions of the booking, legal notice and privacy policy</label>
+                <input type="submit" value="Submit">
         </form>
+    </div>
     </body>
 </html>
