@@ -22,7 +22,7 @@ label {
     margin: auto auto;
     width: 60vw;
     height: 100vh;
-    max-height: 50vh;
+    min-height: 70vh;
     background-color: white;
     border-radius: 20px;
 }
